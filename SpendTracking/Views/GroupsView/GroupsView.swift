@@ -9,7 +9,11 @@ import SwiftUI
 
 struct GroupsView: View {
     var body: some View {
-        Text("Groups tab")
+        NavigationStack {
+            Text("Groups tab")
+            .navigationTitle("Groups")
+        }
+        
     }
 }
 

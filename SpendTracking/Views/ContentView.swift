@@ -23,33 +23,49 @@ struct ContentView: View {
     }
     
     var body: some View {
-        TabView(selection: $selectedTab) {
-            DashboardView()
-                .tabItem {
-                    Label("Dashboard", systemImage: "rectangle.3.group.fill")
-                }
-                .tag(Tab.dashboard)
-            GroupsView()
-                .tabItem {
-                    Label("Groups", systemImage: "person.3.fill")
-                }
-                .tag(Tab.groups)
-            AddView()
-                .tabItem {
-                    Label("", systemImage: "plus.app")
-                        
-                }
-                .tag(Tab.add)
-            MeView()
-                .tabItem {
-                    Label("Me", systemImage: "tray.full.fill")
-                }
-                .tag(Tab.me)
-            AccountView()
-                .tabItem {
-                    Label("Account", systemImage: "person.crop.circle.fill")
-                }
-                .tag(Tab.account)
+        ZStack(alignment: .bottom) {
+            TabView(selection: $selectedTab) {
+                DashboardView()
+                    .tabItem {
+                        Label("Dashboard", systemImage: "rectangle.3.group.fill")
+                    }
+                    .tag(Tab.dashboard)
+                GroupsView()
+                    .tabItem {
+                        Label("Groups", systemImage: "person.3.fill")
+                    }
+                    .tag(Tab.groups)
+                Spacer()
+                    .tabItem {
+                        EmptyView()
+                    }
+                    .tag(Tab.add)
+                MeView()
+                    .tabItem {
+                        Label("Me", systemImage: "tray.full.fill")
+                    }
+                    .tag(Tab.me)
+                AccountView()
+                    .tabItem {
+                        Label("Account", systemImage: "person.crop.circle.fill")
+                    }
+                    .tag(Tab.account)
+            }
+            Button {
+                // TODO: Make the plus button work
+            } label: {
+                Image(systemName: "plus")
+                    .tint(Color.white)
+            }
+            .frame(width: 50, height: 50)
+            .background(Color.black)
+            .clipShape(Circle())
+        }
+        .ignoresSafeArea(.keyboard) // usefull so the button doesn't move around on keyboard show
+        .onChange(of: selectedTab) { [selectedTab] newValue in
+           if newValue == Tab.add {
+               self.selectedTab = selectedTab // reset the selection in case we somehow press the middle tab
+           }
         }
     }
 }

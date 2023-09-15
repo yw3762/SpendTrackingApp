@@ -9,16 +9,43 @@ import SwiftUI
 
 struct DashboardView: View {
     var body: some View {
-        VStack{
-            DashboardTitleView
-            ScrollView {
-                SpendingTrendBlockView()
-                SpendingBreakdownBlockView()
-                OwingsBlockView()
-                RecurringChargesBlockView()
+        NavigationStack {
+            VStack{
+                //DashboardTitleView
+                ScrollView {
+                    //SpendingTrendBlockView()
+                    NavigationLink {
+                        SpendingTrendDetailedView()
+                    } label: {
+                        SpendingTrendBlockView()
+                        
+                    }
+                    .buttonStyle(PlainButtonStyle())
+                    
+                    NavigationLink {
+                        SpendingBreakdownDetailedView()
+                    } label: {
+                        SpendingBreakdownBlockView()
+                    }
+                    .buttonStyle(PlainButtonStyle())
+                    NavigationLink {
+                        // FIXME: need to breakdown this link into half
+                    } label: {
+                        OwingsBlockView()
+                    }
+                    .buttonStyle(PlainButtonStyle())
+                    NavigationLink {
+                        // FIXME: need to create recurring charges view
+                    } label: {
+                        RecurringChargesBlockView()
+                    }
+                    .buttonStyle(PlainButtonStyle())
+                }
             }
+            .background(Color(red: 0.95, green: 0.95, blue: 0.97))
+            .navigationTitle("Dashboard")
         }
-        .background(Color(red: 0.95, green: 0.95, blue: 0.97))
+        
     }
 }
 

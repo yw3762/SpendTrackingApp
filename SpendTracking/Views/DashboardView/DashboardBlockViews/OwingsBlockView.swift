@@ -52,9 +52,6 @@ struct OwingsSubBlockView: View {
                 .padding(.vertical, 2)
                 .cornerRadius(8)
         }
-        .onTapGesture {
-            debugPrint((owes ? "[You owe]" : "[Owings]") + " section tapped")
-        }
     }
 }
 

@@ -24,6 +24,8 @@
 		DAD12AAC2AB4D68A00C1FCCB /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD12AAB2AB4D68A00C1FCCB /* AddView.swift */; };
 		DAD12AAE2AB4D69700C1FCCB /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD12AAD2AB4D69700C1FCCB /* MeView.swift */; };
 		DAD12AB02AB4D6A300C1FCCB /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD12AAF2AB4D6A300C1FCCB /* AccountView.swift */; };
+		DAD12AB72AB4DE2300C1FCCB /* TabBarData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD12AB62AB4DE2300C1FCCB /* TabBarData.swift */; };
+		DAD12ABB2AB4E5CF00C1FCCB /* SpendingBreakdownDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD12ABA2AB4E5CF00C1FCCB /* SpendingBreakdownDetailedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		DAD12AAB2AB4D68A00C1FCCB /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		DAD12AAD2AB4D69700C1FCCB /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
 		DAD12AAF2AB4D6A300C1FCCB /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		DAD12AB62AB4DE2300C1FCCB /* TabBarData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarData.swift; sourceTree = "<group>"; };
+		DAD12ABA2AB4E5CF00C1FCCB /* SpendingBreakdownDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingBreakdownDetailedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +106,7 @@
 				DAD12AA82AB4D5FD00C1FCCB /* AddView */,
 				DAD12AA62AB4D5EB00C1FCCB /* MeView */,
 				DAD12AA72AB4D5F200C1FCCB /* AccountView */,
-				DA9BED042AB4B28C00DDAB39 /* TabBarView.swift */,
+				DAD12AB12AB4DB9900C1FCCB /* TabBarView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -112,7 +116,7 @@
 			children = (
 				DA54E2152AB1F4A9009519CF /* DashboardView.swift */,
 				DA54E21B2AB2145C009519CF /* DashboardBlockViews */,
-				DA9BED0C2AB4CBAA00DDAB39 /* DetailedView */,
+				DA9BED0C2AB4CBAA00DDAB39 /* DetailedViews */,
 			);
 			path = DashboardView;
 			sourceTree = "<group>";
@@ -130,12 +134,13 @@
 			path = DashboardBlockViews;
 			sourceTree = "<group>";
 		};
-		DA9BED0C2AB4CBAA00DDAB39 /* DetailedView */ = {
+		DA9BED0C2AB4CBAA00DDAB39 /* DetailedViews */ = {
 			isa = PBXGroup;
 			children = (
 				DA9BED0A2AB4CBA400DDAB39 /* SpendingTrendDetailedView.swift */,
+				DAD12ABA2AB4E5CF00C1FCCB /* SpendingBreakdownDetailedView.swift */,
 			);
-			path = DetailedView;
+			path = DetailedViews;
 			sourceTree = "<group>";
 		};
 		DAD12AA52AB4D5DF00C1FCCB /* GroupsView */ = {
@@ -168,6 +173,15 @@
 				DAD12AAB2AB4D68A00C1FCCB /* AddView.swift */,
 			);
 			path = AddView;
+			sourceTree = "<group>";
+		};
+		DAD12AB12AB4DB9900C1FCCB /* TabBarView */ = {
+			isa = PBXGroup;
+			children = (
+				DA9BED042AB4B28C00DDAB39 /* TabBarView.swift */,
+				DAD12AB62AB4DE2300C1FCCB /* TabBarData.swift */,
+			);
+			path = TabBarView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +255,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAD12AAE2AB4D69700C1FCCB /* MeView.swift in Sources */,
+				DAD12AB72AB4DE2300C1FCCB /* TabBarData.swift in Sources */,
+				DAD12ABB2AB4E5CF00C1FCCB /* SpendingBreakdownDetailedView.swift in Sources */,
 				DAD12AAC2AB4D68A00C1FCCB /* AddView.swift in Sources */,
 				DA54E2182AB21321009519CF /* SpendingTrendBlockView.swift in Sources */,
 				DA09BE8B2AA368F9005FA648 /* ContentView.swift in Sources */,
@@ -388,8 +404,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -397,9 +413,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = NJg.SpendTracking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -416,8 +435,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -425,9 +444,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = NJg.SpendTracking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

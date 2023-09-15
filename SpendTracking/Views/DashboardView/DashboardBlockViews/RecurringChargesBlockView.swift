@@ -22,9 +22,6 @@ struct RecurringChargesBlockView: View {
                     .overlay(Color(.systemGray))
             }
         }
-        .onTapGesture {
-            debugPrint("Recurring charges section tapped")
-        }
     }
 }
 

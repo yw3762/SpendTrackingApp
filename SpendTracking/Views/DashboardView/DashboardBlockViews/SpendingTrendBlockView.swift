@@ -41,9 +41,6 @@ struct SpendingTrendBlockView: View {
             .padding()
         }
         .contentShape(Rectangle())
-        .onTapGesture {
-            debugPrint("Spending Trend is touched, should direct to A1 view")
-        }
     }
 }
 

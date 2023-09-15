@@ -39,9 +39,6 @@ struct SpendingBreakdownBlockView: View {
             .padding()
         }
         .contentShape(Rectangle())
-        .onTapGesture {
-            debugPrint("Spending breakdown section touched, should direct to A2 view")
-        }
     }
 }
 

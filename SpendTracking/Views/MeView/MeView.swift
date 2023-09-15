@@ -9,7 +9,11 @@ import SwiftUI
 
 struct MeView: View {
     var body: some View {
-        Text("Me tab")
+        NavigationStack {
+            Text("Me tab")
+            .navigationTitle("Me")
+        }
+        
     }
 }
 
