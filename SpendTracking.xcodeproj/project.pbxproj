@@ -82,9 +82,9 @@
 			isa = PBXGroup;
 			children = (
 				DA09BE882AA368F9005FA648 /* SpendTrackingApp.swift */,
+				DA09BE9A2AA36991005FA648 /* Views */,
 				DA09BE8C2AA368FB005FA648 /* Assets.xcassets */,
 				DA09BE8E2AA368FB005FA648 /* Preview Content */,
-				DA09BE9A2AA36991005FA648 /* Views */,
 			);
 			path = SpendTracking;
 			sourceTree = "<group>";

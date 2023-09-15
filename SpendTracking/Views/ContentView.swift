@@ -57,7 +57,7 @@ struct ContentView: View {
                 Image(systemName: "plus")
                     .tint(Color.white)
             }
-            .frame(width: 50, height: 50)
+            .frame(width: 60, height: 60)
             .background(Color.black)
             .clipShape(Circle())
         }
