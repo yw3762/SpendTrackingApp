@@ -15,6 +15,11 @@
 		DA54E2182AB21321009519CF /* SpendingTrendBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA54E2172AB21321009519CF /* SpendingTrendBlockView.swift */; };
 		DA54E21D2AB2156C009519CF /* TrendHistogramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA54E21C2AB2156C009519CF /* TrendHistogramView.swift */; };
 		DA616E832AB0BFBD009994B5 /* BreakdownPieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA616E822AB0BFBD009994B5 /* BreakdownPieChartView.swift */; };
+		DA9BED032AB4A55000DDAB39 /* SpendingBreakdownBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9BED022AB4A55000DDAB39 /* SpendingBreakdownBlockView.swift */; };
+		DA9BED052AB4B28C00DDAB39 /* BottomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9BED042AB4B28C00DDAB39 /* BottomTabBar.swift */; };
+		DA9BED072AB4C2C500DDAB39 /* OwingsBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9BED062AB4C2C500DDAB39 /* OwingsBlockView.swift */; };
+		DA9BED092AB4C2F800DDAB39 /* RecurringChargesBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9BED082AB4C2F800DDAB39 /* RecurringChargesBlockView.swift */; };
+		DA9BED0B2AB4CBA400DDAB39 /* SpendingTrendDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9BED0A2AB4CBA400DDAB39 /* SpendingTrendDetailedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +32,11 @@
 		DA54E2172AB21321009519CF /* SpendingTrendBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingTrendBlockView.swift; sourceTree = "<group>"; };
 		DA54E21C2AB2156C009519CF /* TrendHistogramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendHistogramView.swift; sourceTree = "<group>"; };
 		DA616E822AB0BFBD009994B5 /* BreakdownPieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakdownPieChartView.swift; sourceTree = "<group>"; };
+		DA9BED022AB4A55000DDAB39 /* SpendingBreakdownBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingBreakdownBlockView.swift; sourceTree = "<group>"; };
+		DA9BED042AB4B28C00DDAB39 /* BottomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabBar.swift; sourceTree = "<group>"; };
+		DA9BED062AB4C2C500DDAB39 /* OwingsBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwingsBlockView.swift; sourceTree = "<group>"; };
+		DA9BED082AB4C2F800DDAB39 /* RecurringChargesBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecurringChargesBlockView.swift; sourceTree = "<group>"; };
+		DA9BED0A2AB4CBA400DDAB39 /* SpendingTrendDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingTrendDetailedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +89,7 @@
 		DA09BE9A2AA36991005FA648 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DA9BED042AB4B28C00DDAB39 /* BottomTabBar.swift */,
 				DA54E21A2AB21412009519CF /* DashboardView */,
 			);
 			path = Views;
@@ -88,19 +99,31 @@
 			isa = PBXGroup;
 			children = (
 				DA54E2152AB1F4A9009519CF /* DashboardView.swift */,
-				DA54E21B2AB2145C009519CF /* DashboardGraphedBlockViews */,
+				DA54E21B2AB2145C009519CF /* DashboardBlockViews */,
+				DA9BED0C2AB4CBAA00DDAB39 /* DetailedView */,
 			);
 			path = DashboardView;
 			sourceTree = "<group>";
 		};
-		DA54E21B2AB2145C009519CF /* DashboardGraphedBlockViews */ = {
+		DA54E21B2AB2145C009519CF /* DashboardBlockViews */ = {
 			isa = PBXGroup;
 			children = (
 				DA54E2172AB21321009519CF /* SpendingTrendBlockView.swift */,
 				DA616E822AB0BFBD009994B5 /* BreakdownPieChartView.swift */,
 				DA54E21C2AB2156C009519CF /* TrendHistogramView.swift */,
+				DA9BED022AB4A55000DDAB39 /* SpendingBreakdownBlockView.swift */,
+				DA9BED062AB4C2C500DDAB39 /* OwingsBlockView.swift */,
+				DA9BED082AB4C2F800DDAB39 /* RecurringChargesBlockView.swift */,
 			);
-			path = DashboardGraphedBlockViews;
+			path = DashboardBlockViews;
+			sourceTree = "<group>";
+		};
+		DA9BED0C2AB4CBAA00DDAB39 /* DetailedView */ = {
+			isa = PBXGroup;
+			children = (
+				DA9BED0A2AB4CBA400DDAB39 /* SpendingTrendDetailedView.swift */,
+			);
+			path = DetailedView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,10 +198,15 @@
 			files = (
 				DA54E2182AB21321009519CF /* SpendingTrendBlockView.swift in Sources */,
 				DA09BE8B2AA368F9005FA648 /* ContentView.swift in Sources */,
+				DA9BED0B2AB4CBA400DDAB39 /* SpendingTrendDetailedView.swift in Sources */,
 				DA54E21D2AB2156C009519CF /* TrendHistogramView.swift in Sources */,
+				DA9BED072AB4C2C500DDAB39 /* OwingsBlockView.swift in Sources */,
 				DA54E2162AB1F4A9009519CF /* DashboardView.swift in Sources */,
 				DA616E832AB0BFBD009994B5 /* BreakdownPieChartView.swift in Sources */,
+				DA9BED092AB4C2F800DDAB39 /* RecurringChargesBlockView.swift in Sources */,
 				DA09BE892AA368F9005FA648 /* SpendTrackingApp.swift in Sources */,
+				DA9BED052AB4B28C00DDAB39 /* BottomTabBar.swift in Sources */,
+				DA9BED032AB4A55000DDAB39 /* SpendingBreakdownBlockView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

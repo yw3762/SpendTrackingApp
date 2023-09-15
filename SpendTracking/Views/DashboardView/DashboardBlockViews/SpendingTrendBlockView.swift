@@ -26,24 +26,24 @@ struct SpendingTrendBlockView: View {
                             .frame(width:290, height:34)
                             .lineLimit(2)
                     }
-                        .padding(.leading, 20.0)
-                        .padding(.bottom, 8.0)
+                    .padding(.leading, 20.0)
+                    .padding(.bottom, 8.0)
                     Spacer()
                     Image(systemName: "chevron.forward")
                         .foregroundColor(Color(.systemGray))
                 }
-                    .padding(.trailing)
+                .padding(.trailing)
                 Divider()
-                    .frame(width: 330, height: 1)
+                    .frame(width: 330, height: 0.8)
                     .overlay(Color(.systemGray))
                 TrendHistogramView()
             }
-                .padding()
+            .padding()
         }
-            .contentShape(Rectangle())
-            .onTapGesture {
-                debugPrint("Spending Trend is touched, should direct to A1 view")
-            }
+        .contentShape(Rectangle())
+        .onTapGesture {
+            debugPrint("Spending Trend is touched, should direct to A1 view")
+        }
     }
 }
 
