@@ -1,5 +1,5 @@
 //
-//  BottomTabBar.swift
+//  TabBarView.swift
 //  SpendTracking
 //
 //  Created by Alex Wang on 9/15/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct BottomTabBar: View {
+struct TabBarView: View {
     var body: some View {
         HStack {
             DashboardButtonView(imageName: "rectangle.3.group.fill", labelName: "Dashboard")
@@ -45,6 +45,6 @@ struct DashboardButtonView: View {
 
 struct BottomTabBar_Previews: PreviewProvider {
     static var previews: some View {
-        BottomTabBar()
+        TabBarView()
     }
 }

@@ -17,7 +17,6 @@ struct DashboardView: View {
                 OwingsBlockView()
                 RecurringChargesBlockView()
             }
-            BottomTabBar()
         }
         .background(Color(red: 0.95, green: 0.95, blue: 0.97))
     }
