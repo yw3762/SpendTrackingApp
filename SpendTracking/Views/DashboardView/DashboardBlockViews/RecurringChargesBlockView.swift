@@ -20,7 +20,9 @@ struct RecurringChargesBlockView: View {
                 Divider()
                     .frame(width: 330, height: 0.8)
                     .overlay(Color(.systemGray))
+                // TODO: Finalize this!
             }
+            .padding()
         }
     }
 }
@@ -43,6 +45,6 @@ struct RecurringChargesTopRowView: View {
             Image(systemName: "chevron.forward")
                 .foregroundColor(Color(.systemGray))
         }
-        .padding()
+        .padding(.trailing)
     }
 }

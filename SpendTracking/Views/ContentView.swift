@@ -9,8 +9,6 @@ import SwiftUI
 
 
 struct ContentView: View {
-    // See this link: https://medium.com/@andreamiotz/swiftui-with-custom-tab-bar-item-action-6d1e3588369d
-    // For information about creating middle + button
     // TODO: Potential new tabbar features? https://github.com/pratikg29/CustomTabBar
     @State private var selectedTab: Tab = .dashboard
 
