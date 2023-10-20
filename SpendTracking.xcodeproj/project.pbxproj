@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33ED364E2AE2FAF5004BB303 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 33ED364D2AE2FAF5004BB303 /* .gitignore */; };
 		DA09BE892AA368F9005FA648 /* SpendTrackingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA09BE882AA368F9005FA648 /* SpendTrackingApp.swift */; };
 		DA09BE8B2AA368F9005FA648 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA09BE8A2AA368F9005FA648 /* ContentView.swift */; };
 		DA09BE8D2AA368FB005FA648 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA09BE8C2AA368FB005FA648 /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33ED364D2AE2FAF5004BB303 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		DA09BE852AA368F9005FA648 /* SpendTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpendTracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA09BE882AA368F9005FA648 /* SpendTrackingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendTrackingApp.swift; sourceTree = "<group>"; };
 		DA09BE8A2AA368F9005FA648 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 		DA09BE7C2AA368F9005FA648 = {
 			isa = PBXGroup;
 			children = (
+				33ED364D2AE2FAF5004BB303 /* .gitignore */,
 				DA09BE872AA368F9005FA648 /* SpendTracking */,
 				DA09BE862AA368F9005FA648 /* Products */,
 			);
@@ -243,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA09BE902AA368FB005FA648 /* Preview Assets.xcassets in Resources */,
+				33ED364E2AE2FAF5004BB303 /* .gitignore in Resources */,
 				DA09BE8D2AA368FB005FA648 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
