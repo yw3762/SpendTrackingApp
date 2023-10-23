@@ -34,15 +34,9 @@ struct UnsettledSpendingsBlockView: View {
                     Spacer()
                 }
                 .padding(.horizontal)
-                HStack {
-                    VStack {
-                        Text("You owe")
-                        Text("You lent")
-                    }
-                    UnsettledChartView()
-                        .padding(.horizontal)
-                }
-                
+                .padding(.top)
+                UnsettledChartView()
+                    .padding(.horizontal)
             }
             .frame(width: 362, height: 107)
         }
@@ -51,23 +45,49 @@ struct UnsettledSpendingsBlockView: View {
 
 
 struct UnsettledChartView: View {
-    var unsettled : [UnsettledData] = [
+    var unsettledTotals : [UnsettledData] = [
         UnsettledData(type: "You owe", amount: 44),
         UnsettledData(type: "You lent", amount: 123)
     ]
     var body: some View {
         Chart() {
-            ForEach(unsettled) { category in
+            ForEach(unsettledTotals) { category in
                 BarMark(
                     x: .value("Spendings", category.amount),
-                    y: .value("Type", category.type)
+                    y: .value("Type", category.type),
+                    width: 25,
+                    stacking: .standard
                 )
+                .annotation(position: .trailing, alignment: .center) {
+                  // your Text or other overlay here
+                    Text(String(format:"$%.0f", category.amount))
+                        .font(.system(size: 12, weight: .regular))
+                        .foregroundColor(Color("MainDarkGrey"))
+                }
                 .foregroundStyle(category.type == "You owe" ? Color("MainYellow") : Color("MainGreen"))
                 .clipShape(RoundedRectangle(cornerRadius: 6))
             }
         }
         .chartXAxis(.hidden)
-        .chartYAxis(.hidden)
+        .chartYAxis {
+            AxisMarks(
+                preset: .extended,
+                position: .leading
+            ) { value in
+                AxisValueLabel(centered: true) {
+                    if let stringValue = value.as(String.self) {
+                        Text(stringValue)
+                            .font(.system(size: 13, weight: .bold))
+                            .foregroundColor(Color("MainBlack"))
+                            .padding(.horizontal)
+                    }
+                }
+            }
+            
+        }
+        
+        .padding(.trailing)
+        .padding(.bottom, 8)
     }
 }
 
