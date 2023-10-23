@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+let monthlyPayment: Double = 200
+let yearlyPayment = 150
+let nextPaymentDueDate = "Mar 20th"
+
 struct RecurringChargesBlockView: View {
     var body: some View {
         ZStack {
@@ -18,17 +22,39 @@ struct RecurringChargesBlockView: View {
                 .shadow(color: Color("DropdownShadowGrey"), radius: 25, x: 0, y: 2)
             VStack {
                 RecurringChargesTopRowView()
-                // TODO: Finalize this!
                 HStack {
-                    VStack {
-                        Text("Monthly payment: ")
+                    VStack(alignment: .leading) {
+                        Text(String(format:"Monthly payment:", monthlyPayment))
                             .font(.system(size: 12, weight: .bold))
-                        Text("Yearly payment: ")
+                            .padding(.vertical, 10)
+                        Text(String(format:"Yearly payment:", monthlyPayment))
                             .font(.system(size: 12, weight: .bold))
+                            .padding(.bottom, 20)
                     }
+                    .padding(.leading, 17)
+                    .padding(.trailing, -5)
+                    
+                    VStack(alignment: .leading) {
+                        Text(String(format:"$%.0f/mo", monthlyPayment))
+                            .font(.system(size: 12, weight: .bold))
+                            .padding(.vertical, 10)
+                        Text(String(format:"$%.0f/yr", monthlyPayment))
+                            .font(.system(size: 12, weight: .bold))
+                            .padding(.bottom, 20)
+                    }
+                    .padding(.trailing)
+                    
+                    
                     VStack {
                         Text("Next payment due:")
-                        Text("Mar 20th")
+                            .font(.system(size: 13, weight: .bold))
+                            .padding(.top, -15)
+                        Text(nextPaymentDueDate)
+                            .font(.system(size: 20, weight: .bold))
+                            .foregroundStyle(Color("AccentTextOrange"))
+                            .padding(.top, 5)
+                            .padding(.trailing, 5)
+                            .padding(.bottom, 5)
                     }
                 }
             }
@@ -45,17 +71,17 @@ struct RecurringChargesBlockView_Previews: PreviewProvider {
 
 struct RecurringChargesTopRowView: View {
     var body: some View {
-        VStack {
-            HStack {
-                Text("Recurring charges")
-                    .font(.system(size: 13, weight: .bold))
-                    .foregroundColor(Color(red: 1, green: 0.36, blue: 0.14))
-                Spacer()
-                Image(systemName: "chevron.forward")
-                    .foregroundColor(Color("ChevronGrey"))
-            }
+        HStack {
+            Text("Recurring charges")
+                .font(.system(size: 13, weight: .bold))
+                .foregroundColor(Color(red: 1, green: 0.36, blue: 0.14))
+                .padding(.top, 15)
+            Spacer()
+            Image(systemName: "chevron.forward")
+                .foregroundColor(Color("ChevronGrey"))
         }
         .padding(.horizontal)
-        .padding(.top, -10)
+        .padding(.top, 10)
+        .padding(.bottom, -5)
     }
 }
