@@ -14,7 +14,7 @@ struct RecurringChargesBlockView: View {
                 .foregroundColor(.clear)
                 .frame(width: 362, height: 99)
                 .background(.white)
-                .cornerRadius(5)
+                .cornerRadius(15)
             VStack {
                 RecurringChargesTopRowView()
                 Divider()

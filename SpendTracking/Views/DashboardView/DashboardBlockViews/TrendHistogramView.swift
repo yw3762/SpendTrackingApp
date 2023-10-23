@@ -71,7 +71,7 @@ struct TrendHistogramView: View {
         }
         .chartYAxis(.hidden)
         .chartXAxis(.hidden)
-        .frame(width: 330, height: 90)
+        .frame(width: 330, height: 70)
     }
     
 }

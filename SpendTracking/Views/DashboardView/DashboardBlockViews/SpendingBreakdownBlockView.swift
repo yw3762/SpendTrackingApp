@@ -14,7 +14,7 @@ struct SpendingBreakdownBlockView: View {
                 .foregroundColor(.clear)
                 .frame(width: 362, height: 189)
                 .background(.white)
-                .cornerRadius(5)
+                .cornerRadius(15)
             VStack {
                 HStack {
                     VStack(alignment: .leading) {

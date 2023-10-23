@@ -14,7 +14,7 @@ struct OwingsBlockView: View {
                 .foregroundColor(.clear)
                 .frame(width: 362, height: 107)
                 .background(.white)
-                .cornerRadius(5)
+                .cornerRadius(15)
             HStack {
                 OwingsSubBlockView(owes: true, amount: 900)
                     .padding()

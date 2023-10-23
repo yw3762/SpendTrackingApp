@@ -84,8 +84,9 @@
 		DA09BE872AA368F9005FA648 /* SpendTracking */ = {
 			isa = PBXGroup;
 			children = (
-				DA09BE882AA368F9005FA648 /* SpendTrackingApp.swift */,
+				DA3790582AB4F44500BB8FD0 /* Model */,
 				DA09BE9A2AA36991005FA648 /* Views */,
+				DA09BE882AA368F9005FA648 /* SpendTrackingApp.swift */,
 				DA09BE8C2AA368FB005FA648 /* Assets.xcassets */,
 				DA09BE8E2AA368FB005FA648 /* Preview Content */,
 			);
@@ -112,6 +113,13 @@
 				DAD12AB12AB4DB9900C1FCCB /* TabBarView */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		DA3790582AB4F44500BB8FD0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		DA54E21A2AB21412009519CF /* DashboardView */ = {

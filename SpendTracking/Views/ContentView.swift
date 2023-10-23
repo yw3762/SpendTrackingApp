@@ -53,10 +53,10 @@ struct ContentView: View {
                 // TODO: Make the plus button work
             } label: {
                 Image(systemName: "plus")
-                    .tint(Color.white)
+                    .tint(Color("MainWhite"))
             }
             .frame(width: 60, height: 60)
-            .background(Color.black)
+            .background(Color("MainGreen"))
             .clipShape(Circle())
         }
         .ignoresSafeArea(.keyboard) // usefull so the button doesn't move around on keyboard show

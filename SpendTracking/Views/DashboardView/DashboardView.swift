@@ -19,7 +19,6 @@ struct DashboardView: View {
                         SpendingTrendDetailedView()
                     } label: {
                         SpendingTrendBlockView()
-                        
                     }
                     .buttonStyle(PlainButtonStyle())
                     

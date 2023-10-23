@@ -7,38 +7,46 @@
 
 import SwiftUI
 
+
 struct SpendingTrendBlockView: View {
     var body: some View {
         ZStack {
             Rectangle()
                 .foregroundColor(.clear)
-                .frame(width: 362, height: 210)
+                .frame(width: 362, height: 189)
                 .background(.white)
-                .cornerRadius(5)
+                .cornerRadius(15)
             VStack {
                 HStack {
                     VStack(alignment: .leading) {
-                        Text("Spending Trend")
-                            .font(.system(size: 13, weight: .bold))
-                            .foregroundColor(Color(red: 1, green: 0.36, blue: 0.14))
+                        HStack {
+                            Text("Spending Trend")
+                                .font(.system(size: 13, weight: .bold))
+                                .foregroundColor(Color(red: 1, green: 0.36, blue: 0.14))
+                            Spacer()
+                            Image(systemName: "chevron.forward")
+                                .foregroundColor(Color(.systemGray))
+                        }
+                        .padding(.trailing)
+                        
+                        
                         Text("Some comments summarizing spendings, bluh bluh bluh...")
                             .font(.system(size: 14, weight: .bold))
                             .frame(width:290, height:34)
                             .lineLimit(2)
                     }
-                    .padding(.leading, 20.0)
-                    .padding(.bottom, 8.0)
-                    Spacer()
-                    Image(systemName: "chevron.forward")
-                        .foregroundColor(Color(.systemGray))
+                    .padding(.leading, 38.0)
+                    .padding(.bottom, 4.0)
                 }
                 .padding(.trailing)
+                
                 Divider()
-                    .frame(width: 330, height: 0.8)
+                    .frame(width: 335, height: 0.8)
                     .overlay(Color(.systemGray))
+                
                 TrendHistogramView()
             }
-            .padding()
+
         }
         .contentShape(Rectangle())
     }
