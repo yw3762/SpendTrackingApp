@@ -15,7 +15,7 @@ struct UnsettledData: Identifiable {
     var amount: Double
 }
 
-struct OwingsBlockView: View {
+struct UnsettledSpendingsBlockView: View {
     
 
     var body: some View {
@@ -73,8 +73,8 @@ struct UnsettledChartView: View {
 
 
 
-struct OwingsBlockView_Previews: PreviewProvider {
+struct UnsettledSpendingsBlockView_Previews: PreviewProvider {
     static var previews: some View {
-        OwingsBlockView()
+        UnsettledSpendingsBlockView()
     }
 }

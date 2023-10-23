@@ -91,7 +91,7 @@ struct BreakdownPieChartView: View {
                             .foregroundStyle(.gray)
                             .font(.caption)
                         Spacer()
-                        Text(item.percentage.roundTo(decimalPlaces: 1) + "%")
+                        Text(item.percentage.roundTo(decimalPlaces: 0) + "%")
                             .font(.system(size: 12, weight: .semibold))
                             .foregroundStyle(Color("MainBlack"))
                             

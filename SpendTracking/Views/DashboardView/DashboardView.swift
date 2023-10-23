@@ -29,13 +29,13 @@ struct DashboardView: View {
                     }
                     .buttonStyle(PlainButtonStyle())
                     NavigationLink {
-                        // FIXME: need to breakdown this link into half
+                        // TODO: Add redirection page
                     } label: {
-                        OwingsBlockView()
+                        UnsettledSpendingsBlockView()
                     }
                     .buttonStyle(PlainButtonStyle())
                     NavigationLink {
-                        // FIXME: need to create recurring charges view
+                        // TODO: Add redirection page
                     } label: {
                         RecurringChargesBlockView()
                     }
