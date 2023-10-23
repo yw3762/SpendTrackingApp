@@ -16,6 +16,7 @@ struct SpendingTrendBlockView: View {
                 .frame(width: 362, height: 189)
                 .background(.white)
                 .cornerRadius(15)
+                .shadow(color: Color("DropdownShadowGrey"), radius: 25, x: 0, y: 2)
             VStack {
                 HStack {
                     VStack(alignment: .leading) {
@@ -49,6 +50,7 @@ struct SpendingTrendBlockView: View {
 
         }
         .contentShape(Rectangle())
+        
     }
 }
 

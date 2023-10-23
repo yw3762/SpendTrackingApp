@@ -25,9 +25,11 @@ struct ContentView: View {
             TabView(selection: $selectedTab) {
                 DashboardView()
                     .tabItem {
-                        Label("Dashboard", systemImage: "rectangle.3.group.fill")
+                        Label(("Dashboard"), systemImage: "rectangle.3.group.fill")
                     }
                     .tag(Tab.dashboard)
+                    .tint(.blue)
+                    
                 GroupsView()
                     .tabItem {
                         Label("Groups", systemImage: "person.3.fill")
@@ -45,21 +47,26 @@ struct ContentView: View {
                     .tag(Tab.me)
                 AccountView()
                     .tabItem {
-                        Label("Account", systemImage: "person.crop.circle.fill")
+                        Label("Account", systemImage: "person.crop.square")
                     }
                     .tag(Tab.account)
             }
+            .tint(Color("MainBlack")) // This passes tint color to all subviews
             Button {
                 // TODO: Make the plus button work
             } label: {
                 Image(systemName: "plus")
+                    .resizable()
+                    .frame(width: 32, height: 32)
                     .tint(Color("MainWhite"))
+                    
             }
             .frame(width: 60, height: 60)
             .background(Color("MainGreen"))
             .clipShape(Circle())
+            .padding(.bottom, -6)
         }
-        .ignoresSafeArea(.keyboard) // usefull so the button doesn't move around on keyboard show
+        .ignoresSafeArea(.keyboard) // useful so the button doesn't move around on keyboard show
         .onChange(of: selectedTab) { [selectedTab] newValue in
            if newValue == Tab.add {
                self.selectedTab = selectedTab // reset the selection in case we somehow press the middle tab

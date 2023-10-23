@@ -122,6 +122,40 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		DA4BC1C02AE6B7C6002B6C39 /* SpendingTrendBlockView */ = {
+			isa = PBXGroup;
+			children = (
+				DA54E2172AB21321009519CF /* SpendingTrendBlockView.swift */,
+				DA54E21C2AB2156C009519CF /* TrendHistogramView.swift */,
+			);
+			path = SpendingTrendBlockView;
+			sourceTree = "<group>";
+		};
+		DA4BC1C12AE6B7DC002B6C39 /* SpendingBreakdownBlockView */ = {
+			isa = PBXGroup;
+			children = (
+				DA9BED022AB4A55000DDAB39 /* SpendingBreakdownBlockView.swift */,
+				DA616E822AB0BFBD009994B5 /* BreakdownPieChartView.swift */,
+			);
+			path = SpendingBreakdownBlockView;
+			sourceTree = "<group>";
+		};
+		DA4BC1C22AE6B7EF002B6C39 /* RecurringChargesBlockView */ = {
+			isa = PBXGroup;
+			children = (
+				DA9BED082AB4C2F800DDAB39 /* RecurringChargesBlockView.swift */,
+			);
+			path = RecurringChargesBlockView;
+			sourceTree = "<group>";
+		};
+		DA4BC1C32AE6B809002B6C39 /* OwingsBlockView */ = {
+			isa = PBXGroup;
+			children = (
+				DA9BED062AB4C2C500DDAB39 /* OwingsBlockView.swift */,
+			);
+			path = OwingsBlockView;
+			sourceTree = "<group>";
+		};
 		DA54E21A2AB21412009519CF /* DashboardView */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,12 +169,10 @@
 		DA54E21B2AB2145C009519CF /* DashboardBlockViews */ = {
 			isa = PBXGroup;
 			children = (
-				DA54E2172AB21321009519CF /* SpendingTrendBlockView.swift */,
-				DA616E822AB0BFBD009994B5 /* BreakdownPieChartView.swift */,
-				DA54E21C2AB2156C009519CF /* TrendHistogramView.swift */,
-				DA9BED022AB4A55000DDAB39 /* SpendingBreakdownBlockView.swift */,
-				DA9BED062AB4C2C500DDAB39 /* OwingsBlockView.swift */,
-				DA9BED082AB4C2F800DDAB39 /* RecurringChargesBlockView.swift */,
+				DA4BC1C02AE6B7C6002B6C39 /* SpendingTrendBlockView */,
+				DA4BC1C12AE6B7DC002B6C39 /* SpendingBreakdownBlockView */,
+				DA4BC1C32AE6B809002B6C39 /* OwingsBlockView */,
+				DA4BC1C22AE6B7EF002B6C39 /* RecurringChargesBlockView */,
 			);
 			path = DashboardBlockViews;
 			sourceTree = "<group>";
@@ -339,7 +371,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -393,7 +425,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
