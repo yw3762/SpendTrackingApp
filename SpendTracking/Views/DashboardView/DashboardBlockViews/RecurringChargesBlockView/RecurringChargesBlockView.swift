@@ -26,10 +26,10 @@ struct RecurringChargesBlockView: View {
                     VStack(alignment: .leading) {
                         Text(String(format:"Monthly payment:", monthlyPayment))
                             .font(.system(size: 12, weight: .bold))
-                            .padding(.vertical, 10)
+                            .padding(.vertical, 8)
                         Text(String(format:"Yearly payment:", monthlyPayment))
                             .font(.system(size: 12, weight: .bold))
-                            .padding(.bottom, 20)
+                            .padding(.bottom, 25)
                     }
                     .padding(.leading, 17)
                     .padding(.trailing, -5)
@@ -37,10 +37,10 @@ struct RecurringChargesBlockView: View {
                     VStack(alignment: .leading) {
                         Text(String(format:"$%.0f/mo", monthlyPayment))
                             .font(.system(size: 12, weight: .bold))
-                            .padding(.vertical, 10)
+                            .padding(.vertical, 8)
                         Text(String(format:"$%.0f/yr", monthlyPayment))
                             .font(.system(size: 12, weight: .bold))
-                            .padding(.bottom, 20)
+                            .padding(.bottom, 25)
                     }
                     .padding(.trailing)
                     
@@ -49,13 +49,15 @@ struct RecurringChargesBlockView: View {
                         Text("Next payment due:")
                             .font(.system(size: 13, weight: .bold))
                             .padding(.top, -15)
+                            
                         Text(nextPaymentDueDate)
                             .font(.system(size: 20, weight: .bold))
                             .foregroundStyle(Color("AccentTextOrange"))
-                            .padding(.top, 5)
+                            .padding(.top, 1)
                             .padding(.trailing, 5)
-                            .padding(.bottom, 5)
+                            .padding(.bottom, 8)
                     }
+                    .padding(.trailing)
                 }
             }
             .padding()

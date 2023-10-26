@@ -12,6 +12,7 @@
 		DA09BE8B2AA368F9005FA648 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA09BE8A2AA368F9005FA648 /* ContentView.swift */; };
 		DA09BE8D2AA368FB005FA648 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA09BE8C2AA368FB005FA648 /* Assets.xcassets */; };
 		DA09BE902AA368FB005FA648 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA09BE8F2AA368FB005FA648 /* Preview Assets.xcassets */; };
+		DA3B8BED2AE997650095BEDF /* AccountDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B8BEC2AE997650095BEDF /* AccountDetailsView.swift */; };
 		DA54E2162AB1F4A9009519CF /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA54E2152AB1F4A9009519CF /* DashboardView.swift */; };
 		DA54E2182AB21321009519CF /* SpendingTrendBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA54E2172AB21321009519CF /* SpendingTrendBlockView.swift */; };
 		DA54E21D2AB2156C009519CF /* TrendHistogramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA54E21C2AB2156C009519CF /* TrendHistogramView.swift */; };
@@ -36,6 +37,7 @@
 		DA09BE8A2AA368F9005FA648 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DA09BE8C2AA368FB005FA648 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA09BE8F2AA368FB005FA648 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DA3B8BEC2AE997650095BEDF /* AccountDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailsView.swift; sourceTree = "<group>"; };
 		DA54E2152AB1F4A9009519CF /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		DA54E2172AB21321009519CF /* SpendingTrendBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingTrendBlockView.swift; sourceTree = "<group>"; };
 		DA54E21C2AB2156C009519CF /* TrendHistogramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendHistogramView.swift; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				DAD12AAF2AB4D6A300C1FCCB /* AccountView.swift */,
+				DA3B8BEC2AE997650095BEDF /* AccountDetailsView.swift */,
 			);
 			path = AccountView;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				DA54E21D2AB2156C009519CF /* TrendHistogramView.swift in Sources */,
 				DA9BED072AB4C2C500DDAB39 /* UnsettledSpendingsBlockView.swift in Sources */,
 				DA54E2162AB1F4A9009519CF /* DashboardView.swift in Sources */,
+				DA3B8BED2AE997650095BEDF /* AccountDetailsView.swift in Sources */,
 				DAD12AB02AB4D6A300C1FCCB /* AccountView.swift in Sources */,
 				DA616E832AB0BFBD009994B5 /* BreakdownPieChartView.swift in Sources */,
 				DA9BED092AB4C2F800DDAB39 /* RecurringChargesBlockView.swift in Sources */,
