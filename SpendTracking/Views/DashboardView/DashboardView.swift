@@ -19,7 +19,6 @@ struct DashboardView: View {
                         SpendingTrendDetailedView()
                     } label: {
                         SpendingTrendBlockView()
-                        
                     }
                     .buttonStyle(PlainButtonStyle())
                     
@@ -30,20 +29,20 @@ struct DashboardView: View {
                     }
                     .buttonStyle(PlainButtonStyle())
                     NavigationLink {
-                        // FIXME: need to breakdown this link into half
+                        // TODO: Add redirection page
                     } label: {
-                        OwingsBlockView()
+                        UnsettledSpendingsBlockView()
                     }
                     .buttonStyle(PlainButtonStyle())
                     NavigationLink {
-                        // FIXME: need to create recurring charges view
+                        // TODO: Add redirection page
                     } label: {
                         RecurringChargesBlockView()
                     }
                     .buttonStyle(PlainButtonStyle())
                 }
             }
-            .background(Color(red: 0.95, green: 0.95, blue: 0.97))
+            .background(Color("MainWhite"))
             .navigationTitle("Dashboard")
         }
         

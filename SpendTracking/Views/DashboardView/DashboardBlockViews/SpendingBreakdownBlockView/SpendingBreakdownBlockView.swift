@@ -14,13 +14,14 @@ struct SpendingBreakdownBlockView: View {
                 .foregroundColor(.clear)
                 .frame(width: 362, height: 189)
                 .background(.white)
-                .cornerRadius(5)
+                .cornerRadius(15)
+                .shadow(color: Color("DropdownShadowGrey"), radius: 25, x: 0, y: 2)
             VStack {
                 HStack {
                     VStack(alignment: .leading) {
                         Text("Spending Breakdown")
                             .font(.system(size: 13, weight: .bold))
-                            .foregroundColor(Color(red: 1, green: 0.36, blue: 0.14))
+                            .foregroundColor(Color("MainBlack"))
                     }
                     .padding(.leading, 20.0)
                     .padding(.bottom, 8.0)

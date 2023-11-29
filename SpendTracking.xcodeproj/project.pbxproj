@@ -18,7 +18,7 @@
 		DA616E832AB0BFBD009994B5 /* BreakdownPieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA616E822AB0BFBD009994B5 /* BreakdownPieChartView.swift */; };
 		DA9BED032AB4A55000DDAB39 /* SpendingBreakdownBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9BED022AB4A55000DDAB39 /* SpendingBreakdownBlockView.swift */; };
 		DA9BED052AB4B28C00DDAB39 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9BED042AB4B28C00DDAB39 /* TabBarView.swift */; };
-		DA9BED072AB4C2C500DDAB39 /* OwingsBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9BED062AB4C2C500DDAB39 /* OwingsBlockView.swift */; };
+		DA9BED072AB4C2C500DDAB39 /* UnsettledSpendingsBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9BED062AB4C2C500DDAB39 /* UnsettledSpendingsBlockView.swift */; };
 		DA9BED092AB4C2F800DDAB39 /* RecurringChargesBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9BED082AB4C2F800DDAB39 /* RecurringChargesBlockView.swift */; };
 		DA9BED0B2AB4CBA400DDAB39 /* SpendingTrendDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9BED0A2AB4CBA400DDAB39 /* SpendingTrendDetailedView.swift */; };
 		DAD12AAA2AB4D67F00C1FCCB /* GroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD12AA92AB4D67F00C1FCCB /* GroupsView.swift */; };
@@ -42,7 +42,7 @@
 		DA616E822AB0BFBD009994B5 /* BreakdownPieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakdownPieChartView.swift; sourceTree = "<group>"; };
 		DA9BED022AB4A55000DDAB39 /* SpendingBreakdownBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingBreakdownBlockView.swift; sourceTree = "<group>"; };
 		DA9BED042AB4B28C00DDAB39 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
-		DA9BED062AB4C2C500DDAB39 /* OwingsBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwingsBlockView.swift; sourceTree = "<group>"; };
+		DA9BED062AB4C2C500DDAB39 /* UnsettledSpendingsBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsettledSpendingsBlockView.swift; sourceTree = "<group>"; };
 		DA9BED082AB4C2F800DDAB39 /* RecurringChargesBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecurringChargesBlockView.swift; sourceTree = "<group>"; };
 		DA9BED0A2AB4CBA400DDAB39 /* SpendingTrendDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingTrendDetailedView.swift; sourceTree = "<group>"; };
 		DAD12AA92AB4D67F00C1FCCB /* GroupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsView.swift; sourceTree = "<group>"; };
@@ -84,8 +84,9 @@
 		DA09BE872AA368F9005FA648 /* SpendTracking */ = {
 			isa = PBXGroup;
 			children = (
-				DA09BE882AA368F9005FA648 /* SpendTrackingApp.swift */,
+				DA3790582AB4F44500BB8FD0 /* Model */,
 				DA09BE9A2AA36991005FA648 /* Views */,
+				DA09BE882AA368F9005FA648 /* SpendTrackingApp.swift */,
 				DA09BE8C2AA368FB005FA648 /* Assets.xcassets */,
 				DA09BE8E2AA368FB005FA648 /* Preview Content */,
 			);
@@ -114,6 +115,47 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		DA3790582AB4F44500BB8FD0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DA4BC1C02AE6B7C6002B6C39 /* SpendingTrendBlockView */ = {
+			isa = PBXGroup;
+			children = (
+				DA54E2172AB21321009519CF /* SpendingTrendBlockView.swift */,
+				DA54E21C2AB2156C009519CF /* TrendHistogramView.swift */,
+			);
+			path = SpendingTrendBlockView;
+			sourceTree = "<group>";
+		};
+		DA4BC1C12AE6B7DC002B6C39 /* SpendingBreakdownBlockView */ = {
+			isa = PBXGroup;
+			children = (
+				DA9BED022AB4A55000DDAB39 /* SpendingBreakdownBlockView.swift */,
+				DA616E822AB0BFBD009994B5 /* BreakdownPieChartView.swift */,
+			);
+			path = SpendingBreakdownBlockView;
+			sourceTree = "<group>";
+		};
+		DA4BC1C22AE6B7EF002B6C39 /* RecurringChargesBlockView */ = {
+			isa = PBXGroup;
+			children = (
+				DA9BED082AB4C2F800DDAB39 /* RecurringChargesBlockView.swift */,
+			);
+			path = RecurringChargesBlockView;
+			sourceTree = "<group>";
+		};
+		DA4BC1C32AE6B809002B6C39 /* UnsettledSpendingsBlockView */ = {
+			isa = PBXGroup;
+			children = (
+				DA9BED062AB4C2C500DDAB39 /* UnsettledSpendingsBlockView.swift */,
+			);
+			path = UnsettledSpendingsBlockView;
+			sourceTree = "<group>";
+		};
 		DA54E21A2AB21412009519CF /* DashboardView */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,12 +169,10 @@
 		DA54E21B2AB2145C009519CF /* DashboardBlockViews */ = {
 			isa = PBXGroup;
 			children = (
-				DA54E2172AB21321009519CF /* SpendingTrendBlockView.swift */,
-				DA616E822AB0BFBD009994B5 /* BreakdownPieChartView.swift */,
-				DA54E21C2AB2156C009519CF /* TrendHistogramView.swift */,
-				DA9BED022AB4A55000DDAB39 /* SpendingBreakdownBlockView.swift */,
-				DA9BED062AB4C2C500DDAB39 /* OwingsBlockView.swift */,
-				DA9BED082AB4C2F800DDAB39 /* RecurringChargesBlockView.swift */,
+				DA4BC1C02AE6B7C6002B6C39 /* SpendingTrendBlockView */,
+				DA4BC1C12AE6B7DC002B6C39 /* SpendingBreakdownBlockView */,
+				DA4BC1C32AE6B809002B6C39 /* UnsettledSpendingsBlockView */,
+				DA4BC1C22AE6B7EF002B6C39 /* RecurringChargesBlockView */,
 			);
 			path = DashboardBlockViews;
 			sourceTree = "<group>";
@@ -267,7 +307,7 @@
 				DAD12AAA2AB4D67F00C1FCCB /* GroupsView.swift in Sources */,
 				DA9BED0B2AB4CBA400DDAB39 /* SpendingTrendDetailedView.swift in Sources */,
 				DA54E21D2AB2156C009519CF /* TrendHistogramView.swift in Sources */,
-				DA9BED072AB4C2C500DDAB39 /* OwingsBlockView.swift in Sources */,
+				DA9BED072AB4C2C500DDAB39 /* UnsettledSpendingsBlockView.swift in Sources */,
 				DA54E2162AB1F4A9009519CF /* DashboardView.swift in Sources */,
 				DAD12AB02AB4D6A300C1FCCB /* AccountView.swift in Sources */,
 				DA616E832AB0BFBD009994B5 /* BreakdownPieChartView.swift in Sources */,
@@ -331,7 +371,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -385,7 +425,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
