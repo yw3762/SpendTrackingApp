@@ -75,6 +75,7 @@ struct AccountProfileCardView: View {
             HStack {
                 Image("TestProfilePhoto1")
                     .resizable()
+                    .aspectRatio(contentMode: .fill)
                     .frame(width: 80, height: 80)
                     .foregroundColor(Color.black)
                     .background(Color("MainLightGrey"))
