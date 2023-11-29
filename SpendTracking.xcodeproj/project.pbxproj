@@ -12,7 +12,15 @@
 		DA09BE8B2AA368F9005FA648 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA09BE8A2AA368F9005FA648 /* ContentView.swift */; };
 		DA09BE8D2AA368FB005FA648 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA09BE8C2AA368FB005FA648 /* Assets.xcassets */; };
 		DA09BE902AA368FB005FA648 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA09BE8F2AA368FB005FA648 /* Preview Assets.xcassets */; };
+		DA2B209B2AF2A7EF0095B8C8 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2B209A2AF2A7EF0095B8C8 /* CustomAlert.swift */; };
+		DA2B209E2AF2AD030095B8C8 /* CustomAlertModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2B209D2AF2AD030095B8C8 /* CustomAlertModifier.swift */; };
+		DA2B20A02AF2AD220095B8C8 /* AlertViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2B209F2AF2AD220095B8C8 /* AlertViewExtension.swift */; };
 		DA3B8BED2AE997650095BEDF /* AccountDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3B8BEC2AE997650095BEDF /* AccountDetailsView.swift */; };
+		DA5130BB2B17A2BE00616BEF /* SettingsListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5130BA2B17A2BE00616BEF /* SettingsListRow.swift */; };
+		DA5130BE2B17A4EE00616BEF /* SettingsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5130BD2B17A4EE00616BEF /* SettingsList.swift */; };
+		DA5130C52B17BE9E00616BEF /* AccountInfoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5130C42B17BE9E00616BEF /* AccountInfoList.swift */; };
+		DA5130C72B17BEAE00616BEF /* AccountInfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5130C62B17BEAE00616BEF /* AccountInfoRow.swift */; };
+		DA5130CC2B17DE2A00616BEF /* ChangePhoneNumberSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5130CB2B17DE2A00616BEF /* ChangePhoneNumberSheetView.swift */; };
 		DA54E2162AB1F4A9009519CF /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA54E2152AB1F4A9009519CF /* DashboardView.swift */; };
 		DA54E2182AB21321009519CF /* SpendingTrendBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA54E2172AB21321009519CF /* SpendingTrendBlockView.swift */; };
 		DA54E21D2AB2156C009519CF /* TrendHistogramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA54E21C2AB2156C009519CF /* TrendHistogramView.swift */; };
@@ -22,6 +30,10 @@
 		DA9BED072AB4C2C500DDAB39 /* UnsettledSpendingsBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9BED062AB4C2C500DDAB39 /* UnsettledSpendingsBlockView.swift */; };
 		DA9BED092AB4C2F800DDAB39 /* RecurringChargesBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9BED082AB4C2F800DDAB39 /* RecurringChargesBlockView.swift */; };
 		DA9BED0B2AB4CBA400DDAB39 /* SpendingTrendDetailedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9BED0A2AB4CBA400DDAB39 /* SpendingTrendDetailedView.swift */; };
+		DAC5AFC42B0ED00F00A10A3C /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC5AFC32B0ED00F00A10A3C /* NotificationsView.swift */; };
+		DAC5AFC62B0ED1ED00A10A3C /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC5AFC52B0ED1ED00A10A3C /* QRCodeView.swift */; };
+		DAC5AFC82B0ED7AD00A10A3C /* ChangeNameSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC5AFC72B0ED7AD00A10A3C /* ChangeNameSheetView.swift */; };
+		DAC5AFCA2B0ED7BC00A10A3C /* ChangePasswordSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC5AFC92B0ED7BC00A10A3C /* ChangePasswordSheetView.swift */; };
 		DAD12AAA2AB4D67F00C1FCCB /* GroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD12AA92AB4D67F00C1FCCB /* GroupsView.swift */; };
 		DAD12AAC2AB4D68A00C1FCCB /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD12AAB2AB4D68A00C1FCCB /* AddView.swift */; };
 		DAD12AAE2AB4D69700C1FCCB /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD12AAD2AB4D69700C1FCCB /* MeView.swift */; };
@@ -37,7 +49,15 @@
 		DA09BE8A2AA368F9005FA648 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DA09BE8C2AA368FB005FA648 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA09BE8F2AA368FB005FA648 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DA2B209A2AF2A7EF0095B8C8 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
+		DA2B209D2AF2AD030095B8C8 /* CustomAlertModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertModifier.swift; sourceTree = "<group>"; };
+		DA2B209F2AF2AD220095B8C8 /* AlertViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewExtension.swift; sourceTree = "<group>"; };
 		DA3B8BEC2AE997650095BEDF /* AccountDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailsView.swift; sourceTree = "<group>"; };
+		DA5130BA2B17A2BE00616BEF /* SettingsListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsListRow.swift; sourceTree = "<group>"; };
+		DA5130BD2B17A4EE00616BEF /* SettingsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsList.swift; sourceTree = "<group>"; };
+		DA5130C42B17BE9E00616BEF /* AccountInfoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInfoList.swift; sourceTree = "<group>"; };
+		DA5130C62B17BEAE00616BEF /* AccountInfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInfoRow.swift; sourceTree = "<group>"; };
+		DA5130CB2B17DE2A00616BEF /* ChangePhoneNumberSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePhoneNumberSheetView.swift; sourceTree = "<group>"; };
 		DA54E2152AB1F4A9009519CF /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		DA54E2172AB21321009519CF /* SpendingTrendBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingTrendBlockView.swift; sourceTree = "<group>"; };
 		DA54E21C2AB2156C009519CF /* TrendHistogramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendHistogramView.swift; sourceTree = "<group>"; };
@@ -47,6 +67,10 @@
 		DA9BED062AB4C2C500DDAB39 /* UnsettledSpendingsBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsettledSpendingsBlockView.swift; sourceTree = "<group>"; };
 		DA9BED082AB4C2F800DDAB39 /* RecurringChargesBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecurringChargesBlockView.swift; sourceTree = "<group>"; };
 		DA9BED0A2AB4CBA400DDAB39 /* SpendingTrendDetailedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingTrendDetailedView.swift; sourceTree = "<group>"; };
+		DAC5AFC32B0ED00F00A10A3C /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		DAC5AFC52B0ED1ED00A10A3C /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
+		DAC5AFC72B0ED7AD00A10A3C /* ChangeNameSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeNameSheetView.swift; sourceTree = "<group>"; };
+		DAC5AFC92B0ED7BC00A10A3C /* ChangePasswordSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordSheetView.swift; sourceTree = "<group>"; };
 		DAD12AA92AB4D67F00C1FCCB /* GroupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsView.swift; sourceTree = "<group>"; };
 		DAD12AAB2AB4D68A00C1FCCB /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		DAD12AAD2AB4D69700C1FCCB /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
@@ -117,6 +141,16 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		DA2B209C2AF2ACEC0095B8C8 /* CustomAlert */ = {
+			isa = PBXGroup;
+			children = (
+				DA2B209A2AF2A7EF0095B8C8 /* CustomAlert.swift */,
+				DA2B209D2AF2AD030095B8C8 /* CustomAlertModifier.swift */,
+				DA2B209F2AF2AD220095B8C8 /* AlertViewExtension.swift */,
+			);
+			path = CustomAlert;
+			sourceTree = "<group>";
+		};
 		DA3790582AB4F44500BB8FD0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +192,41 @@
 			path = UnsettledSpendingsBlockView;
 			sourceTree = "<group>";
 		};
+		DA5130BC2B17A4DE00616BEF /* SettingsList */ = {
+			isa = PBXGroup;
+			children = (
+				DA5130BA2B17A2BE00616BEF /* SettingsListRow.swift */,
+				DA5130BD2B17A4EE00616BEF /* SettingsList.swift */,
+			);
+			path = SettingsList;
+			sourceTree = "<group>";
+		};
+		DA5130C22B17BDE100616BEF /* AccountDetails */ = {
+			isa = PBXGroup;
+			children = (
+				DA3B8BEC2AE997650095BEDF /* AccountDetailsView.swift */,
+				DA5130C32B17BE6C00616BEF /* ModifyAccount */,
+			);
+			path = AccountDetails;
+			sourceTree = "<group>";
+		};
+		DA5130C32B17BE6C00616BEF /* ModifyAccount */ = {
+			isa = PBXGroup;
+			children = (
+				DA5130C82B17BEB200616BEF /* AccountInfoList */,
+			);
+			path = ModifyAccount;
+			sourceTree = "<group>";
+		};
+		DA5130C82B17BEB200616BEF /* AccountInfoList */ = {
+			isa = PBXGroup;
+			children = (
+				DA5130C42B17BE9E00616BEF /* AccountInfoList.swift */,
+				DA5130C62B17BEAE00616BEF /* AccountInfoRow.swift */,
+			);
+			path = AccountInfoList;
+			sourceTree = "<group>";
+		};
 		DA54E21A2AB21412009519CF /* DashboardView */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +257,26 @@
 			path = DetailedViews;
 			sourceTree = "<group>";
 		};
+		DAC5AFC12B0ECFCB00A10A3C /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				DA5130BC2B17A4DE00616BEF /* SettingsList */,
+				DAC5AFC52B0ED1ED00A10A3C /* QRCodeView.swift */,
+				DAC5AFC32B0ED00F00A10A3C /* NotificationsView.swift */,
+			);
+			path = SettingsView;
+			sourceTree = "<group>";
+		};
+		DAC5AFC22B0ECFD500A10A3C /* EditProfileViews */ = {
+			isa = PBXGroup;
+			children = (
+				DAC5AFC72B0ED7AD00A10A3C /* ChangeNameSheetView.swift */,
+				DAC5AFC92B0ED7BC00A10A3C /* ChangePasswordSheetView.swift */,
+				DA5130CB2B17DE2A00616BEF /* ChangePhoneNumberSheetView.swift */,
+			);
+			path = EditProfileViews;
+			sourceTree = "<group>";
+		};
 		DAD12AA52AB4D5DF00C1FCCB /* GroupsView */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,7 +297,10 @@
 			isa = PBXGroup;
 			children = (
 				DAD12AAF2AB4D6A300C1FCCB /* AccountView.swift */,
-				DA3B8BEC2AE997650095BEDF /* AccountDetailsView.swift */,
+				DA5130C22B17BDE100616BEF /* AccountDetails */,
+				DAC5AFC22B0ECFD500A10A3C /* EditProfileViews */,
+				DAC5AFC12B0ECFCB00A10A3C /* SettingsView */,
+				DA2B209C2AF2ACEC0095B8C8 /* CustomAlert */,
 			);
 			path = AccountView;
 			sourceTree = "<group>";
@@ -302,23 +394,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAD12AAE2AB4D69700C1FCCB /* MeView.swift in Sources */,
+				DA5130BB2B17A2BE00616BEF /* SettingsListRow.swift in Sources */,
 				DAD12AB72AB4DE2300C1FCCB /* TabBarData.swift in Sources */,
+				DA2B209B2AF2A7EF0095B8C8 /* CustomAlert.swift in Sources */,
 				DAD12ABB2AB4E5CF00C1FCCB /* SpendingBreakdownDetailedView.swift in Sources */,
+				DA2B20A02AF2AD220095B8C8 /* AlertViewExtension.swift in Sources */,
 				DAD12AAC2AB4D68A00C1FCCB /* AddView.swift in Sources */,
 				DA54E2182AB21321009519CF /* SpendingTrendBlockView.swift in Sources */,
+				DAC5AFCA2B0ED7BC00A10A3C /* ChangePasswordSheetView.swift in Sources */,
+				DA2B209E2AF2AD030095B8C8 /* CustomAlertModifier.swift in Sources */,
 				DA09BE8B2AA368F9005FA648 /* ContentView.swift in Sources */,
+				DA5130C72B17BEAE00616BEF /* AccountInfoRow.swift in Sources */,
+				DA5130CC2B17DE2A00616BEF /* ChangePhoneNumberSheetView.swift in Sources */,
 				DAD12AAA2AB4D67F00C1FCCB /* GroupsView.swift in Sources */,
+				DAC5AFC82B0ED7AD00A10A3C /* ChangeNameSheetView.swift in Sources */,
 				DA9BED0B2AB4CBA400DDAB39 /* SpendingTrendDetailedView.swift in Sources */,
 				DA54E21D2AB2156C009519CF /* TrendHistogramView.swift in Sources */,
+				DAC5AFC62B0ED1ED00A10A3C /* QRCodeView.swift in Sources */,
 				DA9BED072AB4C2C500DDAB39 /* UnsettledSpendingsBlockView.swift in Sources */,
+				DA5130C52B17BE9E00616BEF /* AccountInfoList.swift in Sources */,
 				DA54E2162AB1F4A9009519CF /* DashboardView.swift in Sources */,
 				DA3B8BED2AE997650095BEDF /* AccountDetailsView.swift in Sources */,
+				DAC5AFC42B0ED00F00A10A3C /* NotificationsView.swift in Sources */,
 				DAD12AB02AB4D6A300C1FCCB /* AccountView.swift in Sources */,
 				DA616E832AB0BFBD009994B5 /* BreakdownPieChartView.swift in Sources */,
 				DA9BED092AB4C2F800DDAB39 /* RecurringChargesBlockView.swift in Sources */,
 				DA09BE892AA368F9005FA648 /* SpendTrackingApp.swift in Sources */,
 				DA9BED052AB4B28C00DDAB39 /* TabBarView.swift in Sources */,
 				DA9BED032AB4A55000DDAB39 /* SpendingBreakdownBlockView.swift in Sources */,
+				DA5130BE2B17A4EE00616BEF /* SettingsList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
