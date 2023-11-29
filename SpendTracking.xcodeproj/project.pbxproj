@@ -21,6 +21,7 @@
 		DA5130C52B17BE9E00616BEF /* AccountInfoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5130C42B17BE9E00616BEF /* AccountInfoList.swift */; };
 		DA5130C72B17BEAE00616BEF /* AccountInfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5130C62B17BEAE00616BEF /* AccountInfoRow.swift */; };
 		DA5130CC2B17DE2A00616BEF /* ChangePhoneNumberSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5130CB2B17DE2A00616BEF /* ChangePhoneNumberSheetView.swift */; };
+		DA5130D12B17E66000616BEF /* ContactUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5130D02B17E66000616BEF /* ContactUsView.swift */; };
 		DA54E2162AB1F4A9009519CF /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA54E2152AB1F4A9009519CF /* DashboardView.swift */; };
 		DA54E2182AB21321009519CF /* SpendingTrendBlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA54E2172AB21321009519CF /* SpendingTrendBlockView.swift */; };
 		DA54E21D2AB2156C009519CF /* TrendHistogramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA54E21C2AB2156C009519CF /* TrendHistogramView.swift */; };
@@ -58,6 +59,7 @@
 		DA5130C42B17BE9E00616BEF /* AccountInfoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInfoList.swift; sourceTree = "<group>"; };
 		DA5130C62B17BEAE00616BEF /* AccountInfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountInfoRow.swift; sourceTree = "<group>"; };
 		DA5130CB2B17DE2A00616BEF /* ChangePhoneNumberSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePhoneNumberSheetView.swift; sourceTree = "<group>"; };
+		DA5130D02B17E66000616BEF /* ContactUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsView.swift; sourceTree = "<group>"; };
 		DA54E2152AB1F4A9009519CF /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		DA54E2172AB21321009519CF /* SpendingTrendBlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingTrendBlockView.swift; sourceTree = "<group>"; };
 		DA54E21C2AB2156C009519CF /* TrendHistogramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendHistogramView.swift; sourceTree = "<group>"; };
@@ -110,9 +112,9 @@
 		DA09BE872AA368F9005FA648 /* SpendTracking */ = {
 			isa = PBXGroup;
 			children = (
+				DA09BE882AA368F9005FA648 /* SpendTrackingApp.swift */,
 				DA3790582AB4F44500BB8FD0 /* Model */,
 				DA09BE9A2AA36991005FA648 /* Views */,
-				DA09BE882AA368F9005FA648 /* SpendTrackingApp.swift */,
 				DA09BE8C2AA368FB005FA648 /* Assets.xcassets */,
 				DA09BE8E2AA368FB005FA648 /* Preview Content */,
 			);
@@ -227,6 +229,16 @@
 			path = AccountInfoList;
 			sourceTree = "<group>";
 		};
+		DA5130CF2B17E62500616BEF /* SettingsDetail */ = {
+			isa = PBXGroup;
+			children = (
+				DAC5AFC52B0ED1ED00A10A3C /* QRCodeView.swift */,
+				DAC5AFC32B0ED00F00A10A3C /* NotificationsView.swift */,
+				DA5130D02B17E66000616BEF /* ContactUsView.swift */,
+			);
+			path = SettingsDetail;
+			sourceTree = "<group>";
+		};
 		DA54E21A2AB21412009519CF /* DashboardView */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,9 +272,8 @@
 		DAC5AFC12B0ECFCB00A10A3C /* SettingsView */ = {
 			isa = PBXGroup;
 			children = (
+				DA5130CF2B17E62500616BEF /* SettingsDetail */,
 				DA5130BC2B17A4DE00616BEF /* SettingsList */,
-				DAC5AFC52B0ED1ED00A10A3C /* QRCodeView.swift */,
-				DAC5AFC32B0ED00F00A10A3C /* NotificationsView.swift */,
 			);
 			path = SettingsView;
 			sourceTree = "<group>";
@@ -401,6 +412,7 @@
 				DA2B20A02AF2AD220095B8C8 /* AlertViewExtension.swift in Sources */,
 				DAD12AAC2AB4D68A00C1FCCB /* AddView.swift in Sources */,
 				DA54E2182AB21321009519CF /* SpendingTrendBlockView.swift in Sources */,
+				DA5130D12B17E66000616BEF /* ContactUsView.swift in Sources */,
 				DAC5AFCA2B0ED7BC00A10A3C /* ChangePasswordSheetView.swift in Sources */,
 				DA2B209E2AF2AD030095B8C8 /* CustomAlertModifier.swift in Sources */,
 				DA09BE8B2AA368F9005FA648 /* ContentView.swift in Sources */,

@@ -31,8 +31,8 @@ struct SettingsList: View {
                                     QRCodeView(content: "myemail@gmail.com")
                                 case "My Friends": // TODO: Link to MyFriends page
                                     Text("My Friends")
-                                case "Contact Us": // TODO: Add contact us page
-                                    Text("Contact Us")
+                                case "Contact Us":
+                                    ContactUsView()
                                 default:
                                     Text("Error")
                                 }

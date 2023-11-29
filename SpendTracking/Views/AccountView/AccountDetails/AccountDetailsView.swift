@@ -8,13 +8,6 @@
 import SwiftUI
 import PhotosUI
 
-struct AccountInfo {
-    let name: String
-    let email: String
-    let phone: Int32? = nil
-    let password: String
-}
-
 
 struct AccountDetailData: Identifiable {
     let id = UUID()
@@ -56,9 +49,6 @@ let newMockData: [AccountDetailData] = [
     ),
 ]
 
-
-let mockAccountInfo = AccountInfo(name: "Amy Yoon", email: "amyemail@gmail.com", password: "verysecure")
-
 extension Binding where Value == String? {
     public func notNil() -> Binding<Bool> {
         return Binding<Bool>(
@@ -80,10 +70,6 @@ struct AccountDetailsView: View {
     
     var body: some View {
         VStack {
-//                Text("My Account")
-//                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-//                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-//                    .padding(.vertical, 7)
             ProfilePictureView()
                 .frame(width: 200, height: 200)
                 .contentShape(Circle())
@@ -104,12 +90,23 @@ struct AccountDetailsView: View {
                         ]
                     )
                 }
+                .padding()
             Spacer()
             AccountInfoList(data: newMockData, showPopUpSheetOf: $showPopUpSheetOf)
-            //AccountDetailsList()
             Spacer()
             DeleteAccountButton(showDeleteAccountAlert: $showDeleteAccountAlert)
             Spacer()
+        }
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                VStack {
+                    Text("My Account")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundStyle(Color("MainBlack"))
+                }
+            }
         }
         .listStyle(.insetGrouped)
         .scrollDisabled(true)
@@ -133,45 +130,45 @@ struct AccountDetailsView: View {
     }
 }
 
-struct AccountDetailsList: View {
-    @State private var showChangeNameSheet = false
-    @State private var showChangePhoneNumberSheet = false
-    @State private var showChangePasswordSheet = false
-    var body: some View {
-        List {
-            HStack {
-                Text("Name")
-                    .frame(width: .infinity)
-                    .onTapGesture {
-                        showChangeNameSheet.toggle()
-                    }
-                    .sheet(isPresented: $showChangeNameSheet) {
-                        ChangeNameSheetView()
-                    }
-                Spacer()
-                Text("Woooooooo")
-            }
-            HStack {
-                Text("Email")
-                Spacer()
-                Text("someemail@gmail.com")
-            }
-            
-            HStack {
-                Text("Phone number")
-                Spacer()
-                Text("Not Linked")
-            }
-            HStack {
-                Text("Password")
-                Spacer()
-                Text("Change password")
-            }
-            
-        }
-        
-    }
-}
+//struct AccountDetailsList: View {
+//    @State private var showChangeNameSheet = false
+//    @State private var showChangePhoneNumberSheet = false
+//    @State private var showChangePasswordSheet = false
+//    var body: some View {
+//        List {
+//            HStack {
+//                Text("Name")
+//                    .frame(width: .infinity)
+//                    .onTapGesture {
+//                        showChangeNameSheet.toggle()
+//                    }
+//                    .sheet(isPresented: $showChangeNameSheet) {
+//                        ChangeNameSheetView()
+//                    }
+//                Spacer()
+//                Text("Woooooooo")
+//            }
+//            HStack {
+//                Text("Email")
+//                Spacer()
+//                Text("someemail@gmail.com")
+//            }
+//            
+//            HStack {
+//                Text("Phone number")
+//                Spacer()
+//                Text("Not Linked")
+//            }
+//            HStack {
+//                Text("Password")
+//                Spacer()
+//                Text("Change password")
+//            }
+//            
+//        }
+//        
+//    }
+//}
 
 struct ProfilePictureView: View {
     let trimRatio = 0.27
@@ -209,7 +206,7 @@ struct DeleteAccountButton: View {
         ZStack {
             RoundedRectangle(cornerRadius: 15)
                 .stroke(Color("MainLightGrey"), lineWidth: 1)
-                .frame(width:169, height:53)
+                .frame(width:200, height:53)
             //.resizable()
                 .foregroundColor(.red)
                 .contentShape(Rectangle())

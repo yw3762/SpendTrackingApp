@@ -11,11 +11,30 @@ struct ChangePhoneNumberSheetView: View {
     @Environment(\.dismiss) var dismiss
 
     var body: some View {
-        Button("Press to dismiss phone number sheet") {
-            dismiss()
+        HStack {
+            Button {
+                dismiss()
+            } label: {
+                Text("Cancel")
+                    .foregroundStyle(Color("MainGreen"))
+            }
+            Spacer()
+            Button {
+                // TODO: await data submission
+                dismiss()
+            } label: {
+                Text("Confirm")
+                    .foregroundStyle(Color("MainGreen"))
+            }
         }
-        .font(.title)
         .padding()
+        Text("Changing Phone Number")
+            .font(.title)
+            .fontWeight(.semibold)
+            .padding()
+        
+        // TODO: Add Input Boxes
+        Spacer()
     }
 }
 

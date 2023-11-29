@@ -27,9 +27,17 @@ struct QRCodeView: View {
                 .frame(width: 350, height: 350)
                 .padding(.bottom, 50)
         }
-        .navigationTitle("QR Code")
         .navigationBarTitleDisplayMode(.inline)
-        
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                VStack {
+                    Text("QR Code")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundStyle(Color("MainBlack"))
+                }
+            }
+        }
     }
     
     func generateQRCode(from string: String) -> UIImage {
