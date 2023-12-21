@@ -113,13 +113,21 @@ struct SignOutButton: View {
                 .foregroundColor(Color("MainRed"))
         }
         .onTapGesture {
-            // TODO: show the CustomAlert'
             showSignOutAlert = true
         }
-        .alert(title: "Sign out", message: "Do you really want to sign out?",
-               primaryButton: CustomAlertButton(title: "Cancel", action: { showSignOutAlert = false }),
-               secondaryButton: CustomAlertButton(title: "Log out", action: { /*TODO: log out*/ }),
-               isPresented: $showSignOutAlert)
+        .alert(isPresented: $showSignOutAlert) {
+            Alert(
+                title: Text("Sign out"),
+                message: Text("Do you really wish to sign out?"),
+                primaryButton: .default(
+                    Text("Cancel")
+                ),
+                secondaryButton: .destructive(
+                    Text("Log out")
+//                        TODO: action - logout
+                )
+            )
+        }
     }
 }
 

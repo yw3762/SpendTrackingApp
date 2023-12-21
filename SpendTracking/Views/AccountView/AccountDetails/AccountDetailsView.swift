@@ -65,8 +65,17 @@ extension Binding where Value == String? {
 struct AccountDetailsView: View {
     @State public var showingPopUpSheet: Bool = false
     @State public var showPopUpSheetOf: String? = nil
-    @State private var showActionSheet = false
+    
+    
     @State public var showDeleteAccountAlert = false
+    
+    @State private var showActionSheet = false
+    @State private var showCamera = false
+    @State private var showImagePicker = false
+    
+    @State private var sourceType: UIImagePickerController.SourceType = .camera
+    
+    @State private var image: UIImage?
     
     var body: some View {
         VStack {
@@ -81,20 +90,30 @@ struct AccountDetailsView: View {
                         title: Text("Select profile photo"),
                         buttons: [
                             .default(Text("Take Photo...")) {
-                                print("Taking Photo")
+                                self.showCamera = true
+                                self.sourceType = .camera
                             },
                             .default(Text("Choose from Library...")) {
-                                print("Choosing from Library")
+                                self.showImagePicker = true
+                                self.sourceType = .photoLibrary
                             },
                             .cancel()
                         ]
                     )
+                }
+                .sheet(isPresented: $showImagePicker) {
+                    ImagePicker(image: self.$image, isShown: self.$showImagePicker, sourceType: self.sourceType)
+                }
+                .fullScreenCover(isPresented: $showCamera) {
+                    ImagePicker(image: self.$image, isShown: self.$showCamera, sourceType: self.sourceType)
+                        .ignoresSafeArea()
                 }
                 .padding()
             Spacer()
             AccountInfoList(data: newMockData, showPopUpSheetOf: $showPopUpSheetOf)
             Spacer()
             DeleteAccountButton(showDeleteAccountAlert: $showDeleteAccountAlert)
+                .padding(.top, 30)
             Spacer()
         }
         .navigationBarTitleDisplayMode(.inline)
@@ -116,10 +135,16 @@ struct AccountDetailsView: View {
                 switch showing {
                 case "Name":
                     ChangeNameSheetView()
+                        .presentationDetents([ .medium, .large])
+                        .presentationBackground(.thinMaterial)
                 case "Phone Number":
                     ChangePhoneNumberSheetView()
+                        .presentationDetents([ .medium, .large])
+                        .presentationBackground(.thinMaterial)
                 case "Password":
                     ChangePasswordSheetView()
+                        .presentationDetents([.large])
+//                        .presentationBackground(.thinMaterial)
                 default:
                     EmptyView()
                 }
@@ -129,46 +154,6 @@ struct AccountDetailsView: View {
         }
     }
 }
-
-//struct AccountDetailsList: View {
-//    @State private var showChangeNameSheet = false
-//    @State private var showChangePhoneNumberSheet = false
-//    @State private var showChangePasswordSheet = false
-//    var body: some View {
-//        List {
-//            HStack {
-//                Text("Name")
-//                    .frame(width: .infinity)
-//                    .onTapGesture {
-//                        showChangeNameSheet.toggle()
-//                    }
-//                    .sheet(isPresented: $showChangeNameSheet) {
-//                        ChangeNameSheetView()
-//                    }
-//                Spacer()
-//                Text("Woooooooo")
-//            }
-//            HStack {
-//                Text("Email")
-//                Spacer()
-//                Text("someemail@gmail.com")
-//            }
-//            
-//            HStack {
-//                Text("Phone number")
-//                Spacer()
-//                Text("Not Linked")
-//            }
-//            HStack {
-//                Text("Password")
-//                Spacer()
-//                Text("Change password")
-//            }
-//            
-//        }
-//        
-//    }
-//}
 
 struct ProfilePictureView: View {
     let trimRatio = 0.27
@@ -219,9 +204,18 @@ struct DeleteAccountButton: View {
             // TODO: show the CustomAlert'
             showDeleteAccountAlert = true
         }
-        .alert(title: "Sign out", message: "Do you really want to sign out?",
-               primaryButton: CustomAlertButton(title: "Cancel", action: { showDeleteAccountAlert = false }),
-               secondaryButton: CustomAlertButton(title: "Log out", action: { /*TODO: log out*/ }),
-               isPresented: $showDeleteAccountAlert)
+        .alert(isPresented: $showDeleteAccountAlert) {
+            Alert(
+                title: Text("Delete Account"),
+                message: Text("Do you really wish to delete your account?"),
+                primaryButton: .default(
+                    Text("Cancel")
+                ),
+                secondaryButton: .destructive(
+                    Text("Confirm")
+//                  TODO: action - deleteWorkoutData
+                )
+            )
+        }
     }
 }

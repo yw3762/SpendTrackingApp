@@ -37,9 +37,6 @@ struct AccountInfoRow: View {
             }
         }
     }
-    
-    
-    
 }
 
 #Preview {

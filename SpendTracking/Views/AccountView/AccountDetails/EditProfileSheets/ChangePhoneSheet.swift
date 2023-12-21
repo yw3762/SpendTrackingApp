@@ -7,9 +7,11 @@
 
 import SwiftUI
 
+// TODO: Link this page to Amy's implementation for phone number
+// I think we can use https://github.com/marmelroy/PhoneNumberKit for parsing phone number
+
 struct ChangePhoneNumberSheetView: View {
     @Environment(\.dismiss) var dismiss
-
     var body: some View {
         HStack {
             Button {

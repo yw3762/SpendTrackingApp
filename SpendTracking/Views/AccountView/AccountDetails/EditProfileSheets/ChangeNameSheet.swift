@@ -7,9 +7,35 @@
 
 import SwiftUI
 
+
+struct ChangeNameField: View {
+    @Binding var textInput: String
+    var body: some View {
+        ZStack {
+            RoundedRectangle(cornerRadius: 10)
+                .fill(.clear)
+                .stroke(Color("MainLightGrey"))
+                .frame(width: 340, height: 40)
+            HStack {
+                // TODO: Change fonts
+                Text("New Name")
+                    .padding()
+                Spacer()
+                TextField(
+                    "Enter new name",
+                    text: $textInput
+                )
+                .padding()
+            }
+            .padding(.leading)
+        }
+        .padding()
+    }
+}
+
 struct ChangeNameSheetView: View {
     @Environment(\.dismiss) var dismiss
-
+    @State var newName: String = ""
     var body: some View {
         HStack {
             Button {
@@ -34,6 +60,7 @@ struct ChangeNameSheetView: View {
             .padding()
         
         // TODO: Add Input Boxes
+        ChangeNameField(textInput: $newName)
         Spacer()
     }
 }
