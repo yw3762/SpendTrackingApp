@@ -32,10 +32,7 @@ struct SpendingBreakdownBlockView: View {
                         .padding(.bottom, 3)
                 }
                 .padding(.trailing)
-                
-                HStack {
-                    BreakdownPieChartView()
-                }
+                BreakdownPieChartView()
             }
             .padding()
         }
